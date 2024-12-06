@@ -1,0 +1,4 @@
+<h1>Monthly Payment Result</h1>
+<p>The monthly interest rate is <%= (@r * 100).to_fs(:percentage, precision: 4) %>.</p>
+<p>Your monthly payment is <%= @result.to_fs(:currency) %>.</p>
+<a href="/payment/new">Try another payment calculation</a>
